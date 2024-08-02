@@ -1,0 +1,144 @@
+:root{
+   --mainBackgroundColor:#123;
+   --mainBorderRadius:8px;
+   --transition-duration: .5s;
+   
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #001;
+    display: flex;
+}
+
+
+
+.menu{
+    width: 60px;
+    height: 100vh;
+    background-color: var(--mainBackgroundColor);
+  padding: 20px;
+  overflow: hidden;
+  transition: var(--transition-duration);
+}
+
+.menu:hover{
+    width: 260px;
+
+}
+
+.menu ul {
+    text-decoration: none;
+    list-style: none;
+    height: 95%;
+    position: relative;
+}
+.menu .profile{
+    display: flex;
+    align-items: center;
+    gap:30px;
+  
+}
+.menu .profile h2{
+    width: 10px;
+}
+.img-box{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+    flex-shrink: 0;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+ 
+    margin: 10px 0px;
+    padding: 10px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    border-radius:var(--mainBorderRadius) ;
+    transition: var(--transition-duration);
+}
+
+.menu ul li a:hover,.box:hover{
+    background-color: #ffffff55;
+  
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.menu ul .log-out a{
+    background: red;
+    overflow: hidden;
+}
+
+.menu ul li a i{
+    font-size: 30px;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+
+}
+
+.title-info{
+    background-color: var(--mainBackgroundColor);
+    height: 50px;
+    border-radius: var(--mainBorderRadius);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--mainBackgroundColor);
+    flex-basis: 100px;
+    flex-grow: 1;
+    border-radius: var(--mainBorderRadius);
+    height: 200px;
+    transition: var(--transition-duration);
+    font-size: 50px;
+}
+.box div p{
+    font-size: 25px;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    
+}
+td,th{
+    background:var(--mainBackgroundColor) ;
+    height: 30px;
+}
